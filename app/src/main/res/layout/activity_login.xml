@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FFC107"
+        android:insetLeft="6dp"
+        android:insetRight="6dp"
+        android:text="LOG IN"
+        android:textColor="#432D13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signinBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordField" />
+
+    <Button
+        android:id="@+id/signinBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FFC107"
+        android:insetLeft="6dp"
+        android:insetRight="6dp"
+        android:text="SIGN IN"
+        android:textColor="#432D13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/passwordField" />
+
+    <EditText
+        android:id="@+id/usernameField"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:hint="Username"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:hint="Password"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameField" />
+</androidx.constraintlayout.widget.ConstraintLayout>

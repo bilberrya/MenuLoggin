@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaseName">
+
+    <EditText
+        android:id="@+id/name2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="Name"
+        android:minHeight="48dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/add2"
+        app:layout_constraintEnd_toStartOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="Password"
+        android:minHeight="48dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/clear2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:insetLeft="6dp"
+        android:insetRight="6dp"
+        android:text="ADD"
+        android:textColor="#432D13"
+        app:layout_constraintBottom_toTopOf="@+id/output2"
+        app:layout_constraintEnd_toStartOf="@+id/clear2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name2" />
+
+    <Button
+        android:id="@+id/clear2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:insetLeft="6dp"
+        android:insetRight="6dp"
+        android:text="CLEAR"
+        android:textColor="#432D13"
+        app:layout_constraintBottom_toTopOf="@+id/output2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add2"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TableLayout
+        android:id="@+id/output2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/bn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/bn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:insetLeft="6dp"
+        android:insetRight="6dp"
+        android:text="BaseName"
+        android:textColor="#432D13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/db2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output2" />
+
+    <Button
+        android:id="@+id/db2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:insetLeft="6dp"
+        android:insetRight="6dp"
+        android:text="DB"
+        android:textColor="#432D13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bn2"
+        app:layout_constraintTop_toBottomOf="@+id/output2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

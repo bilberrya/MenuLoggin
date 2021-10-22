@@ -4,8 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidProjects/Menu/app/src/main/res/drawable/round_shape_btn.xml" value="0.290625" />
+        <entry key="..\:/AndroidProjects/Menu/app/src/main/res/layout/activity_basename.xml" value="0.20989583333333334" />
+        <entry key="..\:/AndroidProjects/Menu/app/src/main/res/layout/activity_database.xml" value="0.20989583333333334" />
+        <entry key="..\:/AndroidProjects/Menu/app/src/main/res/layout/activity_login.xml" value="0.176" />
         <entry key="..\:/AndroidProjects/Menu/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/AndroidProjects/Menu/app/src/main/res/layout/activity_main2.xml" value="0.20923913043478262" />
+        <entry key="..\:/AndroidProjects/Menu/app/src/main/res/layout/activity_shop.xml" value="0.20989583333333334" />
       </map>
     </option>
   </component>
